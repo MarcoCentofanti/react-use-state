@@ -1,6 +1,6 @@
-export default function Description (props) {
+export default function Description ({description}) {
   return (
-    <div className="mt-3">{props.language.description}</div>
+    <div className="mt-3">{description}</div>
      
   )
 }

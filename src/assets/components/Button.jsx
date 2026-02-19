@@ -1,9 +1,9 @@
-export default function Button(props) {
+export default function Button({visibility, title, changeVisibility}) {
   return (
       <button 
-          className={`btn ${props.visibility?"btn-warning" :"btn-primary" }`}
-          onClick={props.changeVisibility}>
-      {props.language.title}
+          className={`btn ${visibility?"btn-warning" :"btn-primary" }`}
+          onClick={changeVisibility}>
+      {title}
       </button>
   )
 }

@@ -6,7 +6,11 @@ export default function Main({ languages }) {
   return (
     <div className="mt-5 d-flex flex-column ">
       {languages.map((singleLanguage) => (
-        <Card2 key={singleLanguage.id} language={singleLanguage} />
+        <Card2  
+          key={singleLanguage.id} 
+          title={singleLanguage.title} 
+          description={singleLanguage.description} 
+        />
       ))}
     </div>
   );

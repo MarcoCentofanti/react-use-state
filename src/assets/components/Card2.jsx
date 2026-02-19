@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "./Button";
 import Description from "./Description";
 
-export default function Card({ language }) {
+export default function Card({ title, description }) {
   const [visibility, setVisibility] = useState(false)
 
     const changeVisibility = () => setVisibility(!visibility)
@@ -11,11 +11,11 @@ export default function Card({ language }) {
     <div className="p-5 border">
       <Button 
         visibility={visibility}
-        language={language}
+        title={title}
         changeVisibility={changeVisibility}
         > 
       </Button>
-      {visibility && <Description language ={language}/> 
+      {visibility && <Description description ={description}/> 
       }
     </div>
       
